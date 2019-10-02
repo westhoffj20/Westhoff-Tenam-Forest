@@ -52,25 +52,28 @@ int main()
        forward();
         	if(digital(m_bump)==1){
                 //if it hit something...
+                printf("uh oh\n");
                  backwards();
                  l_turn();
                    counter = counter + 1; // same as counter ++
             }
              if(digital(r_bump)==1){
                   //if it hit something...
+                  printf("uh oh\n");
                 backwards();
                  r_turn();
                    counter = counter + 1; // same as counter ++
             }
              if(digital(l_bump)==1){
                    //if it hit something...
+                   printf("uh oh\n");
                 backwards();
                  l_turn();
                    counter = counter + 1; // same as counter ++
             }
          if(counter == 5){
                 //if it hit something...
-                 printf("EVASIVE MANUEVER\n");
+                  printf("STINKY\n");
                  evasive();
                  counter = 0;
             }
